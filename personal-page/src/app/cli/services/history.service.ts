@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CommandResultPair } from '../models/command-result-pair.model';
+import { CommandResultPair } from '../../models/command-result-pair.model';
 
 @Injectable({
   providedIn: 'root'
