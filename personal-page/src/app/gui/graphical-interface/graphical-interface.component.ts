@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-graphical-interface',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./graphical-interface.component.css']
 })
 export class GraphicalInterfaceComponent implements OnInit {
+  status: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  clickEvent(){
+    this.status = !this.status;       
   }
 
 }

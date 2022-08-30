@@ -1,10 +1,13 @@
-body{
+.body{
     transition: 0.8s;
     margin: 0;
     padding: 0;
     background-color: rgba(244,243,247,255);
     text-align: center;
+    height: 100vh;
+    width: 100vw;
 }
+
 header{
     display: flex;
     justify-content: flex-end;

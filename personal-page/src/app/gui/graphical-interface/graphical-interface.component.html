@@ -1,9 +1,10 @@
+<div class="body" [ngClass]="status ? 'dark' : ''">
     <div class="loader">
         <div class="circle"></div>
         <div class="circle"></div>
       </div>
     <header>
-        <div class="switch">
+        <div (click)="clickEvent()" style="cursor: pointer" class="switch">
             <div class ="moon"></div>
             <div class ="flicker"></div>
         </div>
@@ -25,3 +26,4 @@
             <p>Jan Hendrik Lingen, contact -> info@lingen.tech</p>
         </div>
     </footer>
+</div>
