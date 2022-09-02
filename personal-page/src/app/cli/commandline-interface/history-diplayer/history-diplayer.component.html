@@ -1,1 +1,4 @@
-<p>history-diplayer works!</p>
+<div *ngFor="let command of this.commands, let i=index"> 
+    <p>{{ this.user }} {{ this.command }}</p>
+    <p>{{ this.results[i] }}</p>
+</div>
