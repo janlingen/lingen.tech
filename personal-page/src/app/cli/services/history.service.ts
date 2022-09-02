@@ -4,8 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class HistoryService {
-  commandHistory: string[] = [];
-  resultHistory: string[] = [];
+  private commandHistory: string[] = [];
+  private resultHistory: string[] = [];
 
   constructor() {}
 
