@@ -7,6 +7,7 @@ import { NavigationComponent } from './navigation/navigation/navigation.componen
 import { GraphicalInterfaceComponent } from './gui/graphical-interface/graphical-interface.component';
 import { CommandlineInterfaceComponent } from './cli/commandline-interface/commandline-interface.component';
 import { HistoryDiplayerComponent } from './cli/commandline-interface/history-diplayer/history-diplayer.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HistoryDiplayerComponent } from './cli/commandline-interface/history-di
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
