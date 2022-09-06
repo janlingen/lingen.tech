@@ -23,6 +23,9 @@ export class CommandlineInterfaceComponent implements OnInit {
 
   checkCommand() {
     switch (this.currentCommand.toLowerCase()) {
+      case 'help':
+        this.historyService.addCommandResult(this.currentCommand, '');
+        break;
       case 'clear':
         this.historyService.clearHistory();
         break;
@@ -33,6 +36,24 @@ export class CommandlineInterfaceComponent implements OnInit {
           and one in Business Administration. My particular interests are data science, 
           financial markets, business intelligence and blockchain technologies.`
         );
+        break;
+      case 'email':
+        this.historyService.addCommandResult(this.currentCommand, '');
+        break;
+      case 'linkedin':
+        this.historyService.addCommandResult(this.currentCommand, '');
+        break;
+      case 'github':
+        this.historyService.addCommandResult(this.currentCommand, '');
+        break;
+      case 'projects':
+        this.historyService.addCommandResult(this.currentCommand, '');
+        break;
+      case 'history':
+        this.historyService.addCommandResult(this.currentCommand, '');
+        break;
+      case 'banner':
+        this.historyService.addCommandResult(this.currentCommand, '');
         break;
       case '':
         this.historyService.addCommandResult(this.currentCommand, '');
