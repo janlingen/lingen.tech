@@ -38,13 +38,15 @@ export class CommandlineInterfaceComponent implements OnInit {
         );
         break;
       case 'email':
-        this.historyService.addCommandResult(this.currentCommand, '');
+        window.open('mailto:info@lingen.tech')
+        this.historyService.addCommandResult(this.currentCommand, 'mailto:info@lingen.tech');
         break;
       case 'linkedin':
         this.historyService.addCommandResult(this.currentCommand, '');
         break;
       case 'github':
-        this.historyService.addCommandResult(this.currentCommand, '');
+        window.open('https://github.com/janlingen')
+        this.historyService.addCommandResult(this.currentCommand, 'Opening a new tab with github-profile...');
         break;
       case 'projects':
         this.historyService.addCommandResult(this.currentCommand, '');
