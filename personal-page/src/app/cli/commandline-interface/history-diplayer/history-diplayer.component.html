@@ -1,4 +1,4 @@
 <div *ngFor="let command of this.commands, let i=index"> 
-    <p>{{ this.user }} {{ this.command }}</p>
+    <p><span style="font-weight: bold;">[</span><span style="color: blue; font-weight: bold;">guest@lingen.tech</span><span style="color: rebeccapurple;"> ~/cli</span><span style="font-weight: bold;">]$</span> {{ this.command }}</p>
     <p>{{ this.results[i] }}</p>
 </div>

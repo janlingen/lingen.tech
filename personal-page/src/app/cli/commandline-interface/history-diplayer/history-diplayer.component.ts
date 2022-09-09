@@ -8,7 +8,6 @@ import { HistoryService } from '../../services/history.service';
   styleUrls: ['./history-diplayer.component.css']
 })
 export class HistoryDiplayerComponent implements OnInit {
-  user: string = "[guest@lingen.tech ~/cli]$";
   commands: string[] = [];
   results: string[] = [];
   private commandsChanged: Subscription;
