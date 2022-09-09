@@ -32,8 +32,8 @@ export class CommandlineInterfaceComponent implements OnInit {
       case 'about':
         this.historyService.addCommandResult(
           this.currentCommand,
-          `I am currently completing two Bachelor's degrees, one in Computer Science 
-          and one in Business Administration. My particular interests are data science, 
+          `I am currently completing two Bachelor's degrees, one in Computer Science
+          and one in Business Administration. My particular interests are data science,
           financial markets, business intelligence and blockchain technologies.`
         );
         break;
@@ -49,7 +49,8 @@ export class CommandlineInterfaceComponent implements OnInit {
         this.historyService.addCommandResult(this.currentCommand, 'Opening a new tab with github-profile...');
         break;
       case 'projects':
-        this.historyService.addCommandResult(this.currentCommand, '');
+        window.open('https://github.com/janlingen?tab=repositories')
+        this.historyService.addCommandResult(this.currentCommand, 'Opening a new tab with github-repositories...');
         break;
       case 'history':
         this.historyService.addCommandResult(this.currentCommand, '');
