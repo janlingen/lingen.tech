@@ -2,4 +2,10 @@ input {
   outline: none;
   border: 0px;
   caret-color: red;
+  background-color: blanchedalmond;
+}
+
+.all{
+  background-color: blanchedalmond;
+  height: 100vh;
 }
