@@ -6,10 +6,10 @@ import { Subject } from 'rxjs';
 })
 export class HistoryService {
   private commandHistory: string[] = ["test"];
-  private resultHistory: string[] = ["test 123"];
+  private resultHistory: Array<Array<string>> = [["test 123"]];
   private commandStorage: string[] = [];
   commandsChanged = new Subject<string[]>();
-  resultsChanged = new Subject<string[]>();
+  resultsChanged = new Subject<Array<Array<string>>>();
 
   constructor() {}
 
@@ -17,16 +17,14 @@ export class HistoryService {
     return this.commandHistory.slice();
   }
 
-  getResultHistory(): string[]{
-    return this.resultHistory.slice();
+  getResultHistory(): Array<Array<string>>{
+    return this.resultHistory;
   }
 
-  addCommandResult(command: string, result: string){
+  addCommandResult(command: string, result: string[]){
     this.commandHistory.push(command);
-    console.log(this.commandHistory.length)
     this.commandsChanged.next(this.getCommandHistory());
     this.resultHistory.push(result);
-    console.log(this.resultHistory.length)
     this.resultsChanged.next(this.getResultHistory())
     this.commandStorage.push(command);
   }
@@ -34,7 +32,7 @@ export class HistoryService {
   clearHistory(){
     this.commandHistory = [];
     this.commandsChanged.next(this.getCommandHistory());
-    this.resultHistory = [];
+    this.resultHistory = [[]];
     this.commandsChanged.next(this.getCommandHistory());
   }
 }
