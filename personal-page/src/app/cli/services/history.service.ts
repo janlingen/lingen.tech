@@ -5,8 +5,8 @@ import { Subject } from 'rxjs';
   providedIn: 'root',
 })
 export class HistoryService {
-  private commandHistory: string[] = ["test"];
-  private resultHistory: Array<Array<string>> = [["test 123"]];
+  private commandHistory: string[] = [];
+  private resultHistory: Array<Array<string>> = [];
   private commandStorage: string[] = [];
   commandsChanged = new Subject<string[]>();
   resultsChanged = new Subject<Array<Array<string>>>();
@@ -23,10 +23,15 @@ export class HistoryService {
 
   addCommandResult(command: string, result: string[]){
     this.commandHistory.push(command);
+    this.commandStorage.push(command);
     this.commandsChanged.next(this.getCommandHistory());
     this.resultHistory.push(result);
     this.resultsChanged.next(this.getResultHistory())
     this.commandStorage.push(command);
+  }
+
+  getHistory(){
+    return this.commandStorage.slice();
   }
 
   clearHistory(){
