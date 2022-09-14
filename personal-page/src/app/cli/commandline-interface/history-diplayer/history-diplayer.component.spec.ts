@@ -8,9 +8,8 @@ describe('HistoryDiplayerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HistoryDiplayerComponent ]
-    })
-    .compileComponents();
+      declarations: [HistoryDiplayerComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(HistoryDiplayerComponent);
     component = fixture.componentInstance;

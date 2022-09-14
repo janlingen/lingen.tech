@@ -1,4 +1,9 @@
-<div *ngFor="let command of this.commands, let i=index"> 
-    <p><span style="font-weight: bold;">[</span><span style="color: blue; font-weight: bold;">guest@lingen.tech</span><span style="color: rebeccapurple;"> ~/cli</span><span style="font-weight: bold;">]$</span> {{ this.command }}</p>
-    <p *ngFor="let line of this.results[i]">{{ this.line }}</p>
+<div *ngFor="let command of this.commands; let i = index">
+  <p>
+    <span style="font-weight: bold">[</span
+    ><span style="color: blue; font-weight: bold">guest@lingen.tech</span
+    ><span style="color: rebeccapurple"> ~/cli</span
+    ><span style="font-weight: bold">]$</span> {{ this.command }}
+  </p>
+  <p *ngFor="let line of this.results[i]">{{ this.line }}</p>
 </div>

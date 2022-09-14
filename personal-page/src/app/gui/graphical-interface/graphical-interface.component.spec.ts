@@ -8,9 +8,8 @@ describe('GraphicalInterfaceComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GraphicalInterfaceComponent ]
-    })
-    .compileComponents();
+      declarations: [GraphicalInterfaceComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(GraphicalInterfaceComponent);
     component = fixture.componentInstance;

@@ -1,4 +1,13 @@
 <div class="all">
-<app-history-diplayer></app-history-diplayer>
-<span style="font-weight: bold;">[</span><span style="color: blue; font-weight: bold;">guest@lingen.tech</span><span style="color: rebeccapurple;"> ~/cli</span><span style="font-weight: bold;">]$ </span><input [(ngModel)]="currentCommand" type="text" (keypress)="onKeypress($event)" autofocus>
+  <app-history-diplayer></app-history-diplayer>
+  <span style="font-weight: bold">[</span
+  ><span style="color: blue; font-weight: bold">guest@lingen.tech</span
+  ><span style="color: rebeccapurple"> ~/cli</span
+  ><span style="font-weight: bold">]$ </span
+  ><input
+    [(ngModel)]="currentCommand"
+    type="text"
+    (keypress)="onKeypress($event)"
+    autofocus
+  />
 </div>

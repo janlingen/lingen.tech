@@ -8,9 +8,8 @@ describe('CommandlineInterfaceComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CommandlineInterfaceComponent ]
-    })
-    .compileComponents();
+      declarations: [CommandlineInterfaceComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(CommandlineInterfaceComponent);
     component = fixture.componentInstance;
