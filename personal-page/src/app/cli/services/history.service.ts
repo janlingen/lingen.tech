@@ -13,31 +13,30 @@ export class HistoryService {
 
   constructor() {}
 
-  getCommandHistory(): string[]{
+  getCommandHistory(): string[] {
     return this.commandHistory.slice();
   }
 
-  getResultHistory(): Array<Array<string>>{
+  getResultHistory(): Array<Array<string>> {
     return this.resultHistory;
   }
 
-  addCommandResult(command: string, result: string[]){
+  addCommandResult(command: string, result: string[]) {
     this.commandHistory.push(command);
     this.commandStorage.push(command);
-    this.commandsChanged.next(this.getCommandHistory());
     this.resultHistory.push(result);
-    this.resultsChanged.next(this.getResultHistory())
-    this.commandStorage.push(command);
+    this.commandsChanged.next(this.getCommandHistory());
+    this.resultsChanged.next(this.getResultHistory());
   }
 
-  getHistory(){
+  getHistory() {
     return this.commandStorage.slice();
   }
 
-  clearHistory(){
+  clearHistory() {
     this.commandHistory = [];
+    this.resultHistory = [];
     this.commandsChanged.next(this.getCommandHistory());
-    this.resultHistory = [[]];
-    this.commandsChanged.next(this.getCommandHistory());
+    this.resultsChanged.next(this.getResultHistory());
   }
 }
