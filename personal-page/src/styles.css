@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://www.uncon.net/MesloLGSNF-web-fonts/stylesheet.css');
+
+html {
+  background-color: rgb(40, 42, 53);
+}
