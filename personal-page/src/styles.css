@@ -1,22 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@font-face {
-  font-family: Roboto-Bold;
-  src: url(/assets/fonts/roboto/Roboto-Bold.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: Roboto-Med;
-  src: url(/assets/fonts/roboto/Roboto-Medium.ttf) format('truetype');
-}
-
-.r-bold {
-  font-family: Roboto-Bold;
-}
-
-.r-medium{
-  font-family: Roboto-Med;
-}
-
 html {
   background-color: rgb(40, 42, 53);
 }

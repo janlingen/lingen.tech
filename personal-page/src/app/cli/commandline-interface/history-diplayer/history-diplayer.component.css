@@ -1,6 +1,24 @@
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(/assets/fonts/roboto/Roboto-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Roboto-Med;
+  src: url(/assets/fonts/roboto/Roboto-Medium.ttf) format("truetype");
+}
+
+.r-bold {
+  font-family: Roboto-Bold;
+}
+
+.r-medium {
+  font-family: Roboto-Med;
+}
+
 .shorten {
   max-width: 650px;
-  color:rgb(250, 250, 250);
+  color: rgb(250, 250, 250);
 }
 
 h2 {
