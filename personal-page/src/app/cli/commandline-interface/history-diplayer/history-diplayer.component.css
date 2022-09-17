@@ -1,0 +1,34 @@
+.shorten {
+  max-width: 650px;
+  color:rgb(250, 250, 250);
+}
+
+h2 {
+  position: relative;
+  font-size: 8vw;
+  color: rgb(40, 42, 53);
+  -webkit-text-stroke: 0.2vw white;
+  text-transform: uppercase;
+}
+
+h2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  color: rgb(250, 250, 250);
+  -webkit-text-stroke: 0.2vw white;
+  overflow: hidden;
+  animation: fillup 10s linear infinite;
+}
+
+@keyframes fillup {
+  0% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}

@@ -1,12 +1,15 @@
 <div *ngFor="let command of this.commands; let i = index">
   <div class="r-bold">
     <p>
-      [<span style="color: rgb(255, 255, 255)">guest</span>
+      <span style="color: rgb(255, 255, 255)">guest</span>
       <span style="color: rgb(176, 95, 234)">@lingen.tech</span>
-      <span style="color: rgb(255, 0, 0)"> ~/cli</span>]$ > {{ command }}
+      <span style="color: rgb(255, 0, 0)"> ~/cli</span>$ > {{ command }}
     </p>
   </div>
-  <div class="r-med">
-    <p *ngFor="let line of this.results[i]">{{ this.line }}</p>
+  <div class="r-med" *ngFor="let line of this.results[i]">
+    <p class="shorten" *ngIf="line != 'banner'">{{ this.line }}</p>
+    <div *ngIf="line === 'banner'">
+      <h2 data-text="lingen.tech">lingen.tech</h2>
+    </div>
   </div>
 </div>
