@@ -1,20 +1,13 @@
-@font-face {
-  font-family: Roboto-Bold;
-  src: url(/assets/fonts/roboto/Roboto-Bold.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: Roboto-Med;
-  src: url(/assets/fonts/roboto/Roboto-Medium.ttf) format("truetype");
-}
-
 .r-bold {
-  font-family: Roboto-Bold;
+  font-family: 'Roboto-Bold', sans-serif;
+  font-weight: bold;
 }
 
-.r-medium {
-  font-family: Roboto-Med;
+.r-medium{
+  font-family: 'Roboto-Medium', sans-serif;
+  font-weight: bold;
 }
+
 
 .shorten {
   max-width: 650px;

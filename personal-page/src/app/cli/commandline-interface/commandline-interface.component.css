@@ -1,19 +1,11 @@
-@font-face {
-  font-family: Roboto-Bold;
-  src: url(/assets/fonts/Roboto-Bold.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: Roboto-Med;
-  src: url(/assets/fonts/Roboto-Medium.ttf) format('truetype');
-}
-
 .r-bold {
-  font-family: Roboto-Bold;
+  font-family: 'Roboto-Bold', sans-serif;
+  font-weight: bold;
 }
 
 .r-medium{
-  font-family: Roboto-Med;
+  font-family: 'Roboto-Medium', sans-serif;
+  font-weight: bold;
 }
 
 input {
