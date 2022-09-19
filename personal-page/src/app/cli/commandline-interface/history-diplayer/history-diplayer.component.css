@@ -16,7 +16,7 @@
 
 h2 {
   position: relative;
-  font-size: 8vw;
+  font-size: 5vw;
   color: rgb(40, 42, 53);
   -webkit-text-stroke: 0.2vw white;
   text-transform: uppercase;
@@ -36,10 +36,12 @@ h2::before {
 
 @keyframes fillup {
   0% {
-    width: 0;
+    width: 0%;
   }
-  70%,
-  90% {
+  50%{
+    width: 50%;
+  }
+  100% {
     width: 100%;
   }
 }
