@@ -1,10 +1,10 @@
 .r-bold {
-  font-family: 'Roboto-Bold', sans-serif;
+  font-family: "Roboto-Bold", sans-serif;
   font-weight: bold;
 }
 
-.r-medium{
-  font-family: 'Roboto-Medium', sans-serif;
+.r-medium {
+  font-family: "Roboto-Medium", sans-serif;
   font-weight: bold;
 }
 
@@ -22,4 +22,3 @@ input {
   padding-top: 2ch;
   padding-left: 2ch;
 }
-

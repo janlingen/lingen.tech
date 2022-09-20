@@ -37,7 +37,7 @@ export class CommandlineInterfaceComponent implements OnInit {
       'projects',
       'history',
       'banner',
-      'gui'
+      'gui',
     ];
     if (this.currentCommand.length >= 1) {
       const matches = commands.filter((s) => s.startsWith(this.currentCommand));
