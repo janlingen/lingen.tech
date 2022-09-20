@@ -25,16 +25,7 @@ p {
   padding-left: 5px;
   padding-right: 5px;
 }
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #111;
-  height: auto;
-  width: 100vw;
-  color: #fff;
-}
+
 .switch {
   width: 90px;
   height: 45px;
