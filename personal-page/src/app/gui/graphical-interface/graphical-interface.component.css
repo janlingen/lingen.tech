@@ -1,4 +1,5 @@
 .all {
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,4 +7,31 @@
   height: 100vh;
   background-color: rgb(40, 42, 53);
   color: white;
+}
+
+h1 {
+  padding-right: 15px;
+  padding-left: 15px;
+  color: rgb(189, 194, 204);
+  font-size: 6rem;
+  padding-bottom: 30px;
+}
+
+p {
+  font-size: 2rem;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: rgb(189, 194, 204);
+  padding-bottom: 30px;
+}
+
+button {
+  margin-right: 15px;
+  padding-left: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  background-color: rgb(133, 247, 137);
+  border: 2px solid rgb(133, 247, 137);
+  border-radius: 8px;
 }
