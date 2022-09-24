@@ -51,7 +51,7 @@ export class CommandlineInterfaceComponent implements OnInit {
     switch (command.toLowerCase()) {
       case 'help':
         this.historyService.addCommandResult(command, [
-          'help, clear, about, github, projects, email, linkedin, history, gui',
+          'help, clear, about, github, projects, email, linkedin, history, gui, technologies',
           '---------------------------------------------------------------------------------------',
           'You can press "Enter" after entering a character to trigger auto-completion.',
         ]);
@@ -64,6 +64,13 @@ export class CommandlineInterfaceComponent implements OnInit {
           `I am currently pursuing two bachelor's degrees, one in computer science
           and one in business administration. My special interests are all kinds of programming tasks,
           financial markets, business intelligence, chess and blockchain technologies.`,
+        ]);
+        break;
+      case 'technologies':
+        this.historyService.addCommandResult(command, [
+          'Languages: Java, Python, TypeScript, JavaScript, C, HTML/CSS, SQL',
+          'Major frameworks: Spring, Django, Angular',
+          'Others: Git, Docker, Linux, many other small libraries/frameworks(such as JUnit, ArchUnit, Mockito, Jackson, MapStruct, etc.)',
         ]);
         break;
       case 'email':
