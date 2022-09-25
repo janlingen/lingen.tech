@@ -106,7 +106,7 @@ export class CommandlineInterfaceComponent implements OnInit {
         );
         break;
       case 'banner':
-        this.historyService.addCommandResult(command, ['banner']);
+        this.historyService.addCommandResult(command, ['banner-display']);
         break;
       case 'gui':
         this.historyService.addCommandResult(command, ['navigating to gui']);
