@@ -3,11 +3,11 @@ import { Subscription } from 'rxjs';
 import { HistoryService } from '../../services/history.service';
 
 @Component({
-  selector: 'app-history-diplayer',
-  templateUrl: './history-diplayer.component.html',
-  styleUrls: ['./history-diplayer.component.css'],
+  selector: 'app-history-displayer',
+  templateUrl: './history-displayer.component.html',
+  styleUrls: ['./history-displayer.component.css'],
 })
-export class HistoryDiplayerComponent implements OnInit {
+export class HistoryDisplayerComponent implements OnInit {
   commands: string[] = [];
   results: string[][] = [[]];
   private commandsChanged: Subscription;
