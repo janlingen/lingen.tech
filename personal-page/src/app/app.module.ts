@@ -7,6 +7,7 @@ import { GraphicalInterfaceComponent } from './gui/graphical-interface/graphical
 import { CommandlineInterfaceComponent } from './cli/commandline-interface/commandline-interface.component';
 import { HistoryDisplayerComponent } from './cli/commandline-interface/history-displayer/history-displayer.component';
 import { FormsModule } from '@angular/forms';
+import { SkillsComponent } from './cli/commandline-interface/history-displayer/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { FormsModule } from '@angular/forms';
     GraphicalInterfaceComponent,
     CommandlineInterfaceComponent,
     HistoryDisplayerComponent,
+    SkillsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
