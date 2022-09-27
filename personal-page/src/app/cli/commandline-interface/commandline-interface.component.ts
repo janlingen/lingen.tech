@@ -112,6 +112,9 @@ export class CommandlineInterfaceComponent implements OnInit {
         this.historyService.addCommandResult(command, ['navigating to gui']);
         this.router.navigate(['/gui']);
         break;
+      case 'skills':
+        this.historyService.addCommandResult(command, ['skills']);
+        break;
       case '':
         this.historyService.addCommandResult(command, ['']);
         break;
