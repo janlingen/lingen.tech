@@ -7,7 +7,9 @@
     </p>
   </div>
   <div class="r-medium" *ngFor="let line of this.results[i]">
-    <p class="shorten" *ngIf="line != 'banner-display'">{{ this.line }}</p>
+    <p class="shorten" *ngIf="!['banner-display', 'skills'].includes(line)">
+      {{ this.line }}
+    </p>
     <div *ngIf="line === 'banner-display'">
       <h2 data-text="lingen.tech">lingen.tech</h2>
     </div>
