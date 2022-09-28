@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.css'],
 })
 export class SkillsComponent implements OnInit {
-  skills: string[] = [
+  skills: string[] = [];
+  skillsToLoad: string[] = [
     'python',
     'java',
     'angular',
@@ -20,9 +21,19 @@ export class SkillsComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getArraySlowly(0);
+  }
 
   getSkillImg(skill: string): string {
     return 'assets/' + skill + '.png';
+  }
+
+  getArraySlowly(index: number) {
+    setInterval(() => {
+      if (index == this.skillsToLoad.length) return;
+      this.skills.push(this.skillsToLoad[index]);
+      index++;
+    }, 300);
   }
 }
