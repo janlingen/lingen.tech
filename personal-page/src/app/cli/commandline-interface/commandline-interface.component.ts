@@ -19,7 +19,7 @@ export class CommandlineInterfaceComponent implements OnInit {
   ngOnInit(): void {}
 
   onKeypress(event: KeyboardEvent) {
-    if (event.key === 'Enter') {
+    if (['Enter', 'Return'].includes(event.key)) {
       this.completeCommand();
       this.checkCommand(this.currentCommand);
       this.currentCommand = '';
