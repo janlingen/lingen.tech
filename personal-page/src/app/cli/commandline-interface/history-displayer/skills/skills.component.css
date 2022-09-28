@@ -1,4 +1,15 @@
-img{
-    max-height: 50px;
-    max-width: 75px;
+img {
+  max-height: 50px;
+  max-width: 75px;
+  animation-name: fade-in;
+  animation-duration: 3s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
