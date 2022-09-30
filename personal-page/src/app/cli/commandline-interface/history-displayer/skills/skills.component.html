@@ -1,4 +1,6 @@
 <img
+  (click)="getsHovered(#img)"
+  #img
   *ngFor="let skill of this.skills"
   [src]="getSkillImg(skill)"
 />
