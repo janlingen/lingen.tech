@@ -38,6 +38,7 @@ export class CommandlineInterfaceComponent implements OnInit {
       'history',
       'banner',
       'gui',
+'skills'
     ];
     if (this.currentCommand.length >= 1) {
       const matches = commands.filter((s) => s.startsWith(this.currentCommand));
