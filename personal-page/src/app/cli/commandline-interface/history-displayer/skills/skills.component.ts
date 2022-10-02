@@ -25,9 +25,6 @@ export class SkillsComponent implements OnInit {
     this.getArraySlowly(0);
   }
 
-  getsHovered(img: HTMLImageElement){
-  }
-
   getSkillImg(skill: string): string {
     return 'assets/' + skill + '.png';
   }
