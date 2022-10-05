@@ -1,8 +1,17 @@
+div {
+  min-height: 50px;
+  min-width: 75px;
+}
+
 img {
   max-height: 50px;
   max-width: 75px;
   animation-name: fade-in;
   animation-duration: 3s;
+}
+
+img.clicked {
+  border: 2px solid rgb(176, 95, 234);
 }
 
 @keyframes fade-in {

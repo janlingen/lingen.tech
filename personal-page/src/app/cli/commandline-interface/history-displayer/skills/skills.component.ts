@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
   skills: string[] = [];
+  skillsClicked: boolean[] = [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+  ];
   skillsToLoad: string[] = [
     'python',
     'java',
@@ -20,6 +31,10 @@ export class SkillsComponent implements OnInit {
   ];
 
   constructor() {}
+
+  onClick(index: number) {
+    this.skillsClicked[index] = !this.skillsClicked[index];
+  }
 
   ngOnInit(): void {
     this.getArraySlowly(0);

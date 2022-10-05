@@ -1,5 +1,8 @@
-<img
-  (click)=""
-  *ngFor="let skill of this.skills"
-  [src]="getSkillImg(skill)"
-/>
+<div>
+  <img
+    (click)="onClick(i)"
+    *ngFor="let skill of this.skills; let i = index"
+    [ngClass]="{ clicked: this.skillsClicked[i] }"
+    [src]="getSkillImg(skill)"
+  />
+</div>
