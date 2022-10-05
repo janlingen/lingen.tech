@@ -1,8 +1,9 @@
 <div>
   <img
-    (click)="onClick(i)"
+    (mouseenter)="onHover(i)"
+    (mouseleave)="onHover(i)"
     *ngFor="let skill of this.skills; let i = index"
-    [ngClass]="{ clicked: this.skillsClicked[i] }"
+    [ngClass]="{ hovered: this.skillsHovered[i] }"
     [src]="getSkillImg(skill)"
   />
 </div>

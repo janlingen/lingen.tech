@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
   skills: string[] = [];
-  skillsClicked: boolean[] = [
+  skillsHovered: boolean[] = [
     false,
     false,
     false,
@@ -32,8 +32,8 @@ export class SkillsComponent implements OnInit {
 
   constructor() {}
 
-  onClick(index: number) {
-    this.skillsClicked[index] = !this.skillsClicked[index];
+  onHover(index: number) {
+    this.skillsHovered[index] = !this.skillsHovered[index];
   }
 
   ngOnInit(): void {
