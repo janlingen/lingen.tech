@@ -38,9 +38,13 @@ export class CommandlineInterfaceComponent implements OnInit {
       'history',
       'banner',
       'gui',
-'skills'
+      'skills',
     ];
     if (this.currentCommand.length >= 1) {
+      if (this.currentCommand.startsWith('cd ')) {
+        this.currentCommand = this.currentCommand.substring(3);
+        console.log(this.currentCommand);
+      }
       const matches = commands.filter((s) => s.startsWith(this.currentCommand));
       if (matches.length >= 1) {
         this.currentCommand = matches[0];
@@ -55,6 +59,13 @@ export class CommandlineInterfaceComponent implements OnInit {
           'help, clear, about, github, projects, email, linkedin, history, gui, skills, technologies',
           '---------------------------------------------------------------------------------------',
           'You can press "Enter" after entering a character to trigger auto-completion.',
+        ]);
+        break;
+      case 'ls':
+        this.historyService.addCommandResult(command, [
+          'help clear about github',
+          'projects email linkedin history',
+          ' gui skills technologies',
         ]);
         break;
       case 'clear':
