@@ -1,9 +1,14 @@
-<div>
-  <img
-    (mouseenter)="onHover(i)"
-    (mouseleave)="onHover(i)"
-    *ngFor="let skill of this.skills; let i = index"
-    [ngClass]="{ hovered: this.skillsHovered[i] }"
-    [src]="getSkillImg(skill)"
-  />
+<div class="all">
+  <div class="item" *ngFor="let skill of this.skills; let i = index">
+    <div class="img-sizing">
+      <img
+        (mouseenter)="onHover(i)"
+        (mouseleave)="onHover(i)"
+        (click)="onClick(i)"
+        [ngClass]="{ hovered: this.skillsHovered[i] }"
+        [src]="getSkillImg(skill)"
+      />
+    </div>
+    <p *ngIf="this.skillsClicked[i]">{{ skill }}</p>
+  </div>
 </div>
