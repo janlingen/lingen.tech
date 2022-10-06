@@ -57,7 +57,7 @@ export class CommandlineInterfaceComponent implements OnInit {
       case 'help':
         this.historyService.addCommandResult(command, [
           'help, clear, about, github, projects, email, linkedin, history, gui, skills, technologies',
-          '---------------------------------------------------------------------------------------',
+          '------------------------------------------------------------------------------------------------------------',
           'You can press "Enter" after entering a character to trigger auto-completion.',
         ]);
         break;
