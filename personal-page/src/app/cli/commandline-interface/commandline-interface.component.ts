@@ -63,9 +63,9 @@ export class CommandlineInterfaceComponent implements OnInit {
         break;
       case 'ls':
         this.historyService.addCommandResult(command, [
-          'help clear about github',
-          'projects email linkedin history',
-          ' gui skills technologies',
+          'help/ clear/ about/ github/',
+          'projects/ email/ linkedin/ history/',
+          'gui/ skills/ technologies/',
         ]);
         break;
       case 'clear':
