@@ -9,7 +9,9 @@
   <div class="r-medium" *ngFor="let line of this.results[i]">
     <p
       class="shorten"
-      *ngIf="!['banner-display', 'skills-display'].includes(line)"
+      *ngIf="
+        !['banner-display', 'skills-display', 'help-display'].includes(line)
+      "
     >
       {{ this.line }}
     </p>
@@ -18,6 +20,9 @@
     </div>
     <div *ngIf="line === 'skills-display'">
       <app-skills></app-skills>
+    </div>
+    <div *ngIf="line === 'help-display'">
+      <app-help></app-help>
     </div>
   </div>
 </div>
