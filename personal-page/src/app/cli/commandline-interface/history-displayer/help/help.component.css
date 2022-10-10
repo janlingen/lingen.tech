@@ -1,5 +1,6 @@
 .shorten {
-  max-width: 650px;
+  max-width: 540px;
+  min-width: 540px;
   color: rgb(250, 250, 250);
 }
 
