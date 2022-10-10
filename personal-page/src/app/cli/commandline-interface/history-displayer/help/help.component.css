@@ -15,4 +15,6 @@ hr {
 
 .command {
   margin-right: 30px;
+  font-weight: 600;
+  text-shadow: 2px 1px rgb(176, 95, 234);
 }
