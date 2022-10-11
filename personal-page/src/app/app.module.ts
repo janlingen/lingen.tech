@@ -9,6 +9,7 @@ import { HistoryDisplayerComponent } from './cli/commandline-interface/history-d
 import { FormsModule } from '@angular/forms';
 import { SkillsComponent } from './cli/commandline-interface/history-displayer/skills/skills.component';
 import { HelpComponent } from './cli/commandline-interface/history-displayer/help/help.component';
+import { AboutComponent } from './cli/commandline-interface/history-displayer/about/about.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HelpComponent } from './cli/commandline-interface/history-displayer/hel
     HistoryDisplayerComponent,
     SkillsComponent,
     HelpComponent,
+    AboutComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
