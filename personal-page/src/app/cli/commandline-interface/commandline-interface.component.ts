@@ -23,6 +23,10 @@ export class CommandlineInterfaceComponent implements OnInit {
       this.completeCommand();
       this.checkCommand(this.currentCommand);
       this.currentCommand = '';
+      setTimeout(() => {
+        this.router.navigate([], { fragment: 'mainInput' });
+      }, 1);
+      this.router.navigate([]);
     }
   }
 
