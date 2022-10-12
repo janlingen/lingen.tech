@@ -4,11 +4,10 @@
       <img
         (mouseenter)="onHover(i)"
         (mouseleave)="onHover(i)"
-        (click)="onClick(i)"
         [ngClass]="{ hovered: this.skillsHovered[i] }"
         [src]="getSkillImg(skill)"
       />
     </div>
-    <p *ngIf="this.skillsClicked[i]">{{ skill }}</p>
+    <p *ngIf="this.skillsHovered[i]">{{ skill }}</p>
   </div>
 </div>

@@ -18,17 +18,7 @@ export class SkillsComponent implements OnInit {
     false,
     false,
   ];
-  skillsClicked: boolean[] = [
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-  ];
+
   skillsToLoad: string[] = [
     'python',
     'java',
@@ -45,10 +35,6 @@ export class SkillsComponent implements OnInit {
 
   onHover(index: number) {
     this.skillsHovered[index] = !this.skillsHovered[index];
-  }
-
-  onClick(index: number) {
-    this.skillsClicked[index] = !this.skillsClicked[index];
   }
 
   ngOnInit(): void {
