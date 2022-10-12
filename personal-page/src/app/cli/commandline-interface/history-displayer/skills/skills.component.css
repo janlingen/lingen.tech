@@ -7,6 +7,10 @@
   min-width: 75px;
 }
 
+.item {
+  height: 70px;
+}
+
 img {
   max-height: 50px;
   max-width: 75px;
@@ -14,7 +18,7 @@ img {
   animation-duration: 3s;
 }
 
-.img-sizing{
+.img-sizing {
   height: 50px;
   width: 75px;
   display: flex;
