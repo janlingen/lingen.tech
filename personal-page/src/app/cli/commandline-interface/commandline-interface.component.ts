@@ -22,11 +22,13 @@ export class CommandlineInterfaceComponent implements OnInit {
     if (['Enter', 'Return'].includes(event.key)) {
       this.completeCommand();
       this.checkCommand(this.currentCommand);
+      if (this.currentCommand.toLowerCase() != 'gui') {
+        setTimeout(() => {
+          this.router.navigate([], { fragment: 'mainInput' });
+        }, 1);
+        this.router.navigate([]);
+      }
       this.currentCommand = '';
-      setTimeout(() => {
-        this.router.navigate([], { fragment: 'mainInput' });
-      }, 1);
-      this.router.navigate([]);
     }
   }
 
@@ -43,6 +45,7 @@ export class CommandlineInterfaceComponent implements OnInit {
       'banner',
       'gui',
       'skills',
+      'technologies',
     ];
     if (this.currentCommand.length >= 1) {
       if (this.currentCommand.startsWith('cd ')) {
