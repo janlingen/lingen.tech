@@ -11,8 +11,4 @@ export class GraphicalInterfaceComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-
-  clickEvent() {
-    this.status = !this.status;
-  }
 }
