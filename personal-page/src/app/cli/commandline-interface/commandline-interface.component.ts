@@ -75,11 +75,7 @@ export class CommandlineInterfaceComponent implements OnInit {
         this.historyService.clearHistory();
         break;
       case 'about':
-        this.historyService.addCommandResult(command, [
-          `I am currently pursuing two bachelor's degrees, one in computer science
-          and one in business administration. My special interests are all kinds of programming tasks,
-          financial markets, business intelligence, chess and blockchain technologies.`,
-        ]);
+        this.historyService.addCommandResult(command, ['about-display']);
         break;
       case 'technologies':
         this.historyService.addCommandResult(command, [

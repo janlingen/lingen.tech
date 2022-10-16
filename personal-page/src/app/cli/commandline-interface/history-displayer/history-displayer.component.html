@@ -10,7 +10,12 @@
     <p
       class="shorten"
       *ngIf="
-        !['banner-display', 'skills-display', 'help-display'].includes(line)
+        ![
+          'banner-display',
+          'skills-display',
+          'help-display',
+          'about-display'
+        ].includes(line)
       "
     >
       {{ this.line }}
@@ -23,6 +28,9 @@
     </div>
     <div *ngIf="line === 'help-display'">
       <app-help></app-help>
+    </div>
+    <div *ngIf="line === 'about-display'">
+      <app-about></app-about>
     </div>
   </div>
 </div>
