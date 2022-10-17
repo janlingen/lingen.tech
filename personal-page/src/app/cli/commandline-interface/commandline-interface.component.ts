@@ -92,20 +92,21 @@ export class CommandlineInterfaceComponent implements OnInit {
         break;
       case 'linkedin':
         window.open(
-          'https://www.linkedin.com/in/jan-hendrik-lingen-11a922236/'
+          'https://www.linkedin.com/in/jan-hendrik-lingen-11a922236/',
+          '_blank'
         );
         this.historyService.addCommandResult(command, [
           'Opening a new tab with linkedin-profile...',
         ]);
         break;
       case 'github':
-        window.open('https://github.com/janlingen');
+        window.open('https://github.com/janlingen', '_blank');
         this.historyService.addCommandResult(command, [
           'Opening a new tab with github-profile...',
         ]);
         break;
       case 'projects':
-        window.open('https://github.com/janlingen?tab=repositories');
+        window.open('https://github.com/janlingen?tab=repositories', '_blank');
         this.historyService.addCommandResult(command, [
           'Opening a new tab with github-repositories...',
         ]);
