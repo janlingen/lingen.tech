@@ -1,3 +1,29 @@
+img {
+  max-height: 50px;
+  max-width: 75px;
+  animation-name: fade-in;
+  animation-duration: 3s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+p {
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 20px;
+}
+
+img.hovered {
+  border: 2px solid rgb(176, 95, 234);
+}
+
 .all {
   display: flex;
   justify-content: left;
@@ -11,36 +37,10 @@
   height: 70px;
 }
 
-img {
-  max-height: 50px;
-  max-width: 75px;
-  animation-name: fade-in;
-  animation-duration: 3s;
-}
-
 .img-sizing {
   height: 50px;
   width: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-img.hovered {
-  border: 2px solid rgb(176, 95, 234);
-}
-
-p {
-  margin-left: 5px;
-  margin-right: 5px;
-  height: 20px;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }

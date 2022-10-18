@@ -1,11 +1,11 @@
+hr {
+  margin-right: 20px;
+}
+
 .shorten {
   max-width: 540px;
   min-width: 540px;
   color: rgb(250, 250, 250);
-}
-
-hr {
-  margin-right: 20px;
 }
 
 .outline-container {

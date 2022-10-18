@@ -2,3 +2,18 @@
 html {
   background-color: rgb(40, 42, 53);
 }
+
+.shorten {
+  max-width: 650px;
+  color: rgb(250, 250, 250);
+}
+
+.r-bold {
+  font-family: "Roboto-Bold", sans-serif;
+  font-weight: bold;
+}
+
+.r-medium {
+  font-family: "Roboto-Medium", sans-serif;
+  font-weight: medium;
+}

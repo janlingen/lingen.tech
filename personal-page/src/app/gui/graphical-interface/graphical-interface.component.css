@@ -1,14 +1,3 @@
-.all {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100vh;
-  background-color: rgb(40, 42, 53);
-  color: white;
-}
-
 h1 {
   padding-right: 15px;
   padding-left: 15px;
@@ -34,4 +23,15 @@ button {
   background-color: rgb(133, 247, 137);
   border: 2px solid rgb(133, 247, 137);
   border-radius: 8px;
+}
+
+.all {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(40, 42, 53);
+  color: white;
 }
