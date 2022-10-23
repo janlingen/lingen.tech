@@ -17,6 +17,8 @@ export class SkillsComponent implements OnInit {
     false,
     false,
     false,
+    false,
+    false,
   ];
 
   skillsToLoad: string[] = [
@@ -29,6 +31,8 @@ export class SkillsComponent implements OnInit {
     'ionic',
     'javascript',
     'spring',
+    'clojure',
+    'typescript'
   ];
 
   constructor() {}
