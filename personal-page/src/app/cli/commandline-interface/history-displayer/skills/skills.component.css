@@ -27,10 +27,11 @@ img.hovered {
 .all {
   display: flex;
   justify-content: left;
-  align-items: center;
+  align-items:flex-start;
+  flex-wrap: wrap;
   text-align: center;
-  min-height: 70px;
-  min-width: 75px;
+  min-height: 150px;
+  max-width: 650px;
 }
 
 .item {
