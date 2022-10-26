@@ -19,20 +19,24 @@ export class SkillsComponent implements OnInit {
     false,
     false,
     false,
+    false,
+    false,
   ];
 
   skillsToLoad: string[] = [
     'python',
     'java',
+    'javascript',
+    'clojure',
+    'typescript',
+    'c',
+    'spring',
     'angular',
-    'bash',
-    'git',
     'django',
     'ionic',
-    'javascript',
-    'spring',
-    'clojure',
-    'typescript'
+    'bash',
+    'git',
+    'docker',
   ];
 
   constructor() {}
