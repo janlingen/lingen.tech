@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ModalComponent } from './modal/modal.component';
 
 @Component({
   selector: 'app-skills',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.css'],
 })
 export class SkillsComponent implements OnInit {
+  @ViewChild('modal', { static: false }) modal: ModalComponent;
+
   skills: string[] = [];
   skillsHovered: boolean[] = [
     false,
@@ -59,5 +62,9 @@ export class SkillsComponent implements OnInit {
       this.skills.push(this.skillsToLoad[index]);
       index++;
     }, 300);
+  }
+
+  openModal() {
+    this.modal.open();
   }
 }

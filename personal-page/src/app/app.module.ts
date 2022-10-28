@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { SkillsComponent } from './cli/commandline-interface/history-displayer/skills/skills.component';
 import { HelpComponent } from './cli/commandline-interface/history-displayer/help/help.component';
 import { AboutComponent } from './cli/commandline-interface/history-displayer/about/about.component';
+import { ModalComponent } from './cli/commandline-interface/history-displayer/skills/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AboutComponent } from './cli/commandline-interface/history-displayer/ab
     SkillsComponent,
     HelpComponent,
     AboutComponent,
+    ModalComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
