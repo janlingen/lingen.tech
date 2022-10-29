@@ -7,8 +7,10 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 })
 export class ModalComponent {
   @ViewChild('myModal', { static: false }) modal: ElementRef;
+  input: string = 'In development...';
 
-  open() {
+  open(text: string) {
+    this.input = text;
     this.modal.nativeElement.style.display = 'block';
   }
 

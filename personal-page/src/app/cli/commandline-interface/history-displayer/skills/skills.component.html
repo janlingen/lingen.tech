@@ -5,7 +5,7 @@
       <img
         (mouseenter)="onHover(i)"
         (mouseleave)="onHover(i)"
-        (click)="openModal()"
+        (click)="openModal(skill)"
         [ngClass]="{ hovered: this.skillsHovered[i] }"
         [src]="getSkillImg(skill)"
       />

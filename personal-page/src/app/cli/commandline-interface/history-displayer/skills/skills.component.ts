@@ -64,7 +64,7 @@ export class SkillsComponent implements OnInit {
     }, 300);
   }
 
-  openModal() {
-    this.modal.open();
+  openModal(skill: string) {
+    this.modal.open(skill);
   }
 }
