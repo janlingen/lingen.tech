@@ -61,7 +61,7 @@ export class SkillsComponent implements OnInit {
       if (index == this.skillsToLoad.length) return;
       this.skills.push(this.skillsToLoad[index]);
       index++;
-    }, 300);
+    }, 150);
   }
 
   openModal(skill: string) {
