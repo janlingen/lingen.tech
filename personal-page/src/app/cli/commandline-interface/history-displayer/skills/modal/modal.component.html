@@ -1,6 +1,9 @@
 <div #myModal class="container">
   <div class="content">
-    <p>{{ input }}</p>
+    <p>
+      My experiences with <span>{{ input.toLocaleUpperCase() }}</span
+      >:
+    </p>
     <button (click)="close()">Close</button>
   </div>
 </div>
