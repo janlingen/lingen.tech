@@ -5,6 +5,11 @@ img {
   animation-duration: 3s;
 }
 
+hr {
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -14,7 +19,7 @@ img {
   }
 }
 
-p {
+p.skill-name {
   margin-left: 5px;
   margin-right: 5px;
   height: 20px;
@@ -27,7 +32,7 @@ img.hovered {
 .all {
   display: flex;
   justify-content: left;
-  align-items:flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
   text-align: center;
   min-height: 150px;

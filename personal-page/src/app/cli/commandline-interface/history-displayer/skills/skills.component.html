@@ -10,6 +10,13 @@
         [src]="getSkillImg(skill.name)"
       />
     </div>
-    <p *ngIf="this.skills[i].hovered">{{ skill.name }}</p>
+    <p class="skill-name" *ngIf="this.skills[i].hovered">{{ skill.name }}</p>
   </div>
+</div>
+<div class="shorten">
+  <hr />
+  <p>
+    You can hover over each skill and click on it to see more related
+    experiences.
+  </p>
 </div>
