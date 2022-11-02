@@ -5,11 +5,11 @@
       <img
         (mouseenter)="onHover(i)"
         (mouseleave)="onHover(i)"
-        (click)="openModal(skill)"
-        [ngClass]="{ hovered: this.skillsHovered[i] }"
-        [src]="getSkillImg(skill)"
+        (click)="openModal(skill.name)"
+        [ngClass]="{ hovered: this.skills[i].hovered }"
+        [src]="getSkillImg(skill.name)"
       />
     </div>
-    <p *ngIf="this.skillsHovered[i]">{{ skill }}</p>
+    <p *ngIf="this.skills[i].hovered">{{ skill.name }}</p>
   </div>
 </div>

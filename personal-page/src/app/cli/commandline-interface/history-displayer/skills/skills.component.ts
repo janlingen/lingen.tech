@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ModalComponent } from './modal/modal.component';
+import { Skill } from './skill.model';
 
 @Component({
   selector: 'app-skills',
@@ -9,43 +10,28 @@ import { ModalComponent } from './modal/modal.component';
 export class SkillsComponent implements OnInit {
   @ViewChild('modal', { static: false }) modal: ModalComponent;
 
-  skills: string[] = [];
-  skillsHovered: boolean[] = [
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-  ];
+  skills: Skill[] = [];
 
-  skillsToLoad: string[] = [
-    'python',
-    'java',
-    'javascript',
-    'clojure',
-    'typescript',
-    'c',
-    'spring',
-    'angular',
-    'django',
-    'ionic',
-    'bash',
-    'git',
-    'docker',
+  skillsToLoad: Skill[] = [
+    new Skill('python'),
+    new Skill('java'),
+    new Skill('javascript'),
+    new Skill('clojure'),
+    new Skill('typescript'),
+    new Skill('c'),
+    new Skill('spring'),
+    new Skill('angular'),
+    new Skill('django'),
+    new Skill('ionic'),
+    new Skill('bash'),
+    new Skill('git'),
+    new Skill('docker'),
   ];
 
   constructor() {}
 
   onHover(index: number) {
-    this.skillsHovered[index] = !this.skillsHovered[index];
+    this.skills[index].hovered = !this.skills[index].hovered;
   }
 
   ngOnInit(): void {
