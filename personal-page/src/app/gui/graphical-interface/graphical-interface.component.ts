@@ -6,8 +6,6 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./graphical-interface.component.css'],
 })
 export class GraphicalInterfaceComponent implements OnInit {
-  status: boolean = true;
-
   constructor() {}
 
   ngOnInit(): void {}
