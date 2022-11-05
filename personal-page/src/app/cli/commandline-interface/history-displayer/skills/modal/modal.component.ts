@@ -1,4 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Project } from '../project.model';
 
 @Component({
   selector: 'app-modal',
@@ -9,8 +10,8 @@ export class ModalComponent {
   @ViewChild('myModal', { static: false }) modal: ElementRef;
   input: string = 'In development...';
 
-  open(text: string) {
-    this.input = text;
+  open(skill: string) {
+    this.input = skill;
     this.modal.nativeElement.style.display = 'block';
   }
 
