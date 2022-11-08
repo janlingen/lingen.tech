@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { Project } from '../project.model';
+import { Project } from '../../../../services/project.model';
 
 @Component({
   selector: 'app-modal',
