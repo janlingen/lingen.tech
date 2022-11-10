@@ -1,4 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
+import { ProjectService } from 'src/app/cli/services/project.service';
 import { Project } from '../../../../services/project.model';
 
 @Component({
@@ -9,9 +10,13 @@ import { Project } from '../../../../services/project.model';
 export class ModalComponent {
   @ViewChild('myModal', { static: false }) modal: ElementRef;
   input: string = 'In development...';
+  relatedProjects: Project[] = [];
+
+  constructor(private projectService: ProjectService) {}
 
   open(skill: string) {
     this.input = skill;
+    this.relatedProjects = this.projectService.getRelatedProjects(skill);
     this.modal.nativeElement.style.display = 'block';
   }
 

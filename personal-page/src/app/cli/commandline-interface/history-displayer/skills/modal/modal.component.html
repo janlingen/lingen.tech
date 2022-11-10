@@ -4,6 +4,13 @@
       My experiences with <span>{{ input.toLocaleUpperCase() }}</span
       >:
     </p>
+    <div class="project" *ngFor="let project of relatedProjects">
+      <h4>{{ project.name }}:</h4>
+      <p>{{ project.description }}</p>
+      <p>{{ project.relatedSkills }}</p>
+      <p><a [href]="project.link"> check the code</a></p>
+    </div>
+
     <button (click)="close()">Close</button>
   </div>
 </div>

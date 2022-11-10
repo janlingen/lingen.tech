@@ -7,9 +7,17 @@ button {
   border-radius: 8px;
 }
 
+h4 {
+  color: rgb(176, 95, 234);
+}
+
 span {
   color: rgb(255, 0, 0);
   font-weight: bold;
+}
+
+.project p {
+  padding-left: 20px;
 }
 
 .container {
@@ -31,4 +39,9 @@ span {
   padding: 20px;
   border: 1px solid rgb(176, 95, 234);
   width: 90%;
+}
+
+.project {
+  padding-left: 20px;
+  margin-bottom: 5px;
 }

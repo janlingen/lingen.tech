@@ -13,13 +13,17 @@ export class ProjectService {
       'https://github.com/janlingen/attendance-manager',
       ['java', 'spring', 'git', 'docker', 'sql']
     ),
+    new Project(
+      'archunit-presets',
+      'a few examples of recurring architectures in the daily work of a software developer',
+      'https://github.com/janlingen/archunit-presets',
+      ['java', 'spring']
+    ),
   ];
 
   constructor() {}
 
   getRelatedProjects(skill: string): Project[] {
-    return this.projects.filter((s) =>
-      s.relatedSkills.filter((s) => s === skill)
-    );
+    return this.projects.filter((s) => s.relatedSkills.includes(skill));
   }
 }
