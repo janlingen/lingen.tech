@@ -19,6 +19,12 @@ export class ProjectService {
       'https://github.com/janlingen/archunit-presets',
       ['java', 'spring']
     ),
+    new Project(
+      'lingen.tech',
+      'personal page, with a terminal like look and my favourite colors from the dracula theme',
+      'https://github.com/janlingen/lingen.tech',
+      ['angular', 'typescript', 'git'],
+    )
   ];
 
   constructor() {}
