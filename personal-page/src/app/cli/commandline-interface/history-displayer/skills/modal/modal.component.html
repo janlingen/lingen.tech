@@ -4,13 +4,23 @@
       My experiences with <span>{{ input.toLocaleUpperCase() }}</span
       >:
     </p>
-    <div class="project" *ngFor="let project of relatedProjects">
-      <h4>{{ project.name }}:</h4>
-      <p>{{ project.description }}</p>
-      <p>{{ project.relatedSkills }}</p>
-      <p><a [href]="project.link"> check the code</a></p>
+    <div class="libs-frameworks">
+      <p>
+        <span>Libs & Frameworks:</span>
+      </p>
+      <span class="lib" *ngFor="let lib of relatedLibs">{{ lib }}, </span>
     </div>
-
+    <div class="experiences">
+      <p>
+        <span>Projects:</span>
+      </p>
+      <div class="project" *ngFor="let project of relatedProjects">
+        <h4>{{ project.name }}:</h4>
+        <p>{{ project.description }}</p>
+        <p>{{ project.relatedSkills }}</p>
+        <p><a [href]="project.link"> check the code</a></p>
+      </div>
+    </div>
     <button (click)="close()">Close</button>
   </div>
 </div>

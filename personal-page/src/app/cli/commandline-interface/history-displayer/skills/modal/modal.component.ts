@@ -10,6 +10,7 @@ import { Project } from '../../../../services/project.model';
 export class ModalComponent {
   @ViewChild('myModal', { static: false }) modal: ElementRef;
   input: string = 'In development...';
+  relatedLibs: string[] = [];
   relatedProjects: Project[] = [];
 
   constructor(private projectService: ProjectService) {}
