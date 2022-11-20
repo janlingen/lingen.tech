@@ -1,6 +1,3 @@
 export class Lib {
-    constructor(
-      public name: string,
-      public relatedLanguage: string
-    ) {}
-  }
+  constructor(public name: string, public relatedSkills: string[]) {}
+}
