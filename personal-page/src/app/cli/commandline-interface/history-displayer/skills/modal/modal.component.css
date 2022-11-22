@@ -16,8 +16,17 @@ span {
   font-weight: bold;
 }
 
+span.lib {
+  color: rgb(176, 95, 234);
+  font-weight: normal;
+}
+
 .project p {
   padding-left: 20px;
+}
+
+.libs-frameworks {
+  margin-bottom: 15px;
 }
 
 .container {
