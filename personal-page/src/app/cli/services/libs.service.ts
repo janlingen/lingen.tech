@@ -6,7 +6,17 @@ import { Lib } from './lib.model';
 })
 export class LibsService {
 
-  libs: Lib[] = [new Lib('spring data', ['java', 'spring'])]
+  libs: Lib[] = [new Lib('spring data', ['java', 'spring']),
+  new Lib('angular', ['typescript', 'javascript']),
+  new Lib('ionic', ['angular', 'javascript']),
+  new Lib('spring cloud', ['java', 'spring']),
+  new Lib('JUnit', ['java', 'spring']),
+  new Lib('ArchUnit', ['java', 'spring']),
+  new Lib('spring data jpa', ['java', 'spring']),
+  new Lib('spring data jdbc', ['java', 'spring']),
+  new Lib('hibernate', ['java', 'spring']),
+  new Lib('requests', ['python']),
+]
 
   constructor() { }
 
