@@ -4,7 +4,7 @@
       My experiences with <span>{{ input.toLocaleUpperCase() }}</span
       >:
     </p>
-    <div class="libs-frameworks">
+    <div class="libs-frameworks" *ngIf="relatedLibs.length != 0">
       <p>
         <span>Libs & Frameworks:</span>
       </p>
