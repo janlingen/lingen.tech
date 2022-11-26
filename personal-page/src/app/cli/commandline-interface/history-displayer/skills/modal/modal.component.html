@@ -10,7 +10,7 @@
       </p>
       <span class="lib" *ngFor="let lib of relatedLibs">{{ lib.name }}, </span>
     </div>
-    <div class="experiences">
+    <div class="experiences" *ngIf="relatedProjects.length != 0">
       <p>
         <span>Projects:</span>
       </p>
@@ -20,6 +20,15 @@
         <p>{{ project.relatedSkills }}</p>
         <p><a [href]="project.link"> check the code</a></p>
       </div>
+    </div>
+    <div
+      class="nothing-here"
+      *ngIf="relatedProjects.length == 0 && relatedLibs.length == 0"
+    >
+      <p>
+        It seems that I have to keep a non-disclosure agreement for these
+        experiences.
+      </p>
     </div>
     <button (click)="close()">Close</button>
   </div>
