@@ -11,6 +11,7 @@ import { SkillsComponent } from './cli/commandline-interface/history-displayer/s
 import { HelpComponent } from './cli/commandline-interface/history-displayer/help/help.component';
 import { AboutComponent } from './cli/commandline-interface/history-displayer/about/about.component';
 import { ModalComponent } from './cli/commandline-interface/history-displayer/skills/modal/modal.component';
+import { SecretComponent } from './cli/commandline-interface/secret/secret.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ModalComponent } from './cli/commandline-interface/history-displayer/sk
     HelpComponent,
     AboutComponent,
     ModalComponent,
+    SecretComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
