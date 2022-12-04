@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-secret',
   templateUrl: './secret.component.html',
-  styleUrls: ['./secret.component.css']
+  styleUrls: ['./secret.component.css'],
 })
-export class SecretComponent implements OnInit {
+export class SecretComponent {
+  @ViewChild('myModal', { static: false }) modal: ElementRef;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
+  open() {
+    this.modal.nativeElement.style.display = 'block';
   }
 
+  close() {
+    this.modal.nativeElement.style.display = 'none';
+  }
 }

@@ -45,7 +45,7 @@ export class CommandlineInterfaceComponent implements OnInit {
       'banner',
       'gui',
       'skills',
-      'technologies',
+      'secret'
     ];
     if (this.currentCommand.length >= 1) {
       if (this.currentCommand.startsWith('cd ')) {
@@ -64,6 +64,9 @@ export class CommandlineInterfaceComponent implements OnInit {
       case 'help':
         this.historyService.addCommandResult(command, ['help-display']);
         break;
+      case 'secret':
+        this.historyService.addCommandResult(command, ['secret-display']);
+        break;
       case 'ls':
         this.historyService.addCommandResult(command, [
           'help/ clear/ about/ github/',
@@ -76,13 +79,6 @@ export class CommandlineInterfaceComponent implements OnInit {
         break;
       case 'about':
         this.historyService.addCommandResult(command, ['about-display']);
-        break;
-      case 'technologies':
-        this.historyService.addCommandResult(command, [
-          'Languages: Java, Python, TypeScript, JavaScript, C, HTML/CSS, SQL',
-          'Major frameworks: Spring, Django, Angular',
-          'Others: Git, Docker, Linux, many other small libraries/frameworks(such as JUnit, ArchUnit, Mockito, Jackson, MapStruct, etc.)',
-        ]);
         break;
       case 'email':
         window.open('mailto:info@lingen.tech');

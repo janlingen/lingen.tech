@@ -19,6 +19,7 @@ export class HelpComponent implements OnInit {
     'gui',
     'technologies',
     'ls',
+    'secret'
   ];
 
   declarations: string[] = [
@@ -34,6 +35,7 @@ export class HelpComponent implements OnInit {
     'graphical user interface',
     'more detailed than skills',
     'short list of all commands',
+    'find out yourself',
   ];
 
   constructor() {}
