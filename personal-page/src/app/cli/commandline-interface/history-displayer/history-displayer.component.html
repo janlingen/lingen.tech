@@ -11,7 +11,6 @@
       class="shorten"
       *ngIf="
         ![
-          'secret-display',
           'banner-display',
           'skills-display',
           'help-display',
@@ -31,9 +30,6 @@
       <app-help></app-help>
     </div>
     <div *ngIf="line === 'about-display'">
-      <app-about></app-about>
-    </div>
-    <div *ngIf="line === 'secret-display'">
       <app-about></app-about>
     </div>
   </div>

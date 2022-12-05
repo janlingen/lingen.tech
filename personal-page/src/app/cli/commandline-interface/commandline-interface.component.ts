@@ -22,7 +22,7 @@ export class CommandlineInterfaceComponent implements OnInit {
     if (['Enter', 'Return'].includes(event.key)) {
       this.completeCommand();
       this.checkCommand(this.currentCommand);
-      if (this.currentCommand.toLowerCase() != 'gui') {
+      if (!['gui', 'secret'].includes(this.currentCommand.toLowerCase())) {
         setTimeout(() => {
           this.router.navigate([], { fragment: 'mainInput' });
         }, 1);
@@ -45,7 +45,7 @@ export class CommandlineInterfaceComponent implements OnInit {
       'banner',
       'gui',
       'skills',
-      'secret'
+      'secret',
     ];
     if (this.currentCommand.length >= 1) {
       if (this.currentCommand.startsWith('cd ')) {
@@ -65,7 +65,8 @@ export class CommandlineInterfaceComponent implements OnInit {
         this.historyService.addCommandResult(command, ['help-display']);
         break;
       case 'secret':
-        this.historyService.addCommandResult(command, ['secret-display']);
+        this.historyService.addCommandResult(command, ['navigating to secret']);
+        this.router.navigate(['/secret']);
         break;
       case 'ls':
         this.historyService.addCommandResult(command, [

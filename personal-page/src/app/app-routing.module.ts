@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { CommandlineInterfaceComponent } from './cli/commandline-interface/commandline-interface.component';
+import { SecretComponent } from './cli/commandline-interface/secret/secret.component';
 import { GraphicalInterfaceComponent } from './gui/graphical-interface/graphical-interface.component';
 
 const routerOptions: ExtraOptions = {
@@ -8,9 +9,10 @@ const routerOptions: ExtraOptions = {
 };
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: 'gui', component: GraphicalInterfaceComponent, pathMatch: 'full' },
   { path: 'cli', component: CommandlineInterfaceComponent, pathMatch: 'full' },
+  { path: 'secret', component: SecretComponent, pathMatch: 'full' },
+  { path: '', redirectTo: '/', pathMatch: 'full' },
 ];
 
 @NgModule({
