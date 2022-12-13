@@ -26,6 +26,7 @@ export class SkillsComponent implements OnInit {
     new Skill('bash'),
     new Skill('git'),
     new Skill('docker'),
+    new Skill('gradle')
   ];
 
   constructor() {}
