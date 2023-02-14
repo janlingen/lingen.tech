@@ -13,7 +13,6 @@ export class SecretComponent {
   constructor() {}
 
   checkInput(){
-    console.log(this.input);
     if(this.input == "found"){
       this.success = true;
       this.wrong = false;
