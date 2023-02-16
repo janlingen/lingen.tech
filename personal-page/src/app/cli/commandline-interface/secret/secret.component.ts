@@ -8,15 +8,15 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 export class SecretComponent {
   success = false;
   wrong = false;
-  input : string = "";
+  input: string = '';
 
   constructor() {}
 
-  checkInput(){
-    if(this.input == "found"){
+  checkInput() {
+    if (this.input == 'hcasgpelhgtls') {
       this.success = true;
       this.wrong = false;
-    } else{
+    } else {
       this.success = false;
       this.wrong = true;
     }
