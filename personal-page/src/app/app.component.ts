@@ -16,8 +16,6 @@ export class AppComponent implements OnInit {
       )
     ) {
       this.router.navigate(['/gui']);
-    } else {
-      this.router.navigate(['/cli']);
     }
   }
 }

@@ -1,0 +1,17 @@
+<div class="all">
+  <p>ms per attempt</p>
+  <input class="" [(ngModel)]="msPerTry" type="text" />
+  <p>Pity System?</p>
+  <input (click)="checkPity()" type="checkbox" />
+  <p>Probability (%/100 e.g. 50/100 = 0.5)</p>
+  <input class="" [(ngModel)]="probability" type="number" />
+  <p>Attempts</p>
+  <input class="" [(ngModel)]="attempts" type="number" />
+  <button (click)="calcProb()">Try!</button>
+  <p>Attempts taken: {{ attemptsFirst }}</p>
+  <br />
+  <div *ngFor="let x of results; let i = index">
+    <p *ngIf="x.includes('SUCCESS')" style="color: rgb(133, 247, 137)">{{ x }}</p>
+    <p *ngIf="x.includes('FAILURE')" style="color: red">{{ x }}</p>
+  </div>
+</div>
