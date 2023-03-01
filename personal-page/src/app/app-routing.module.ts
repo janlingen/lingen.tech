@@ -10,11 +10,11 @@ const routerOptions: ExtraOptions = {
 };
 
 const appRoutes: Routes = [
+  { path: 'prob-sim', component: ProbComponent, pathMatch: 'full' },
   { path: 'gui', component: GraphicalInterfaceComponent, pathMatch: 'full' },
   { path: 'cli', component: CommandlineInterfaceComponent, pathMatch: 'full' },
   { path: 'secret', component: SecretComponent, pathMatch: 'full' },
-  { path: 'prob-sim', component: ProbComponent, pathMatch: 'full' },
-  { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: '', redirectTo: '/cli', pathMatch: 'full' },
 ];
 
 @NgModule({
