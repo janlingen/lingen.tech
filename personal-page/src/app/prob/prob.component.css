@@ -6,6 +6,10 @@
     padding-left: 2ch;
   }
 
+.short {
+  font-size: 1.3ch;
+}
+
 input{
     color: black;
 }
