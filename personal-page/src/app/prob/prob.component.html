@@ -1,11 +1,19 @@
 <div class="all">
   <details>
-    <summary>ms per attempt <span class="short">ⓘ</span></summary>
-    <p>determines the milliseconds needed per attempt calculation</p>
+    <summary>
+      ms per attempt
+      <span class="short">ⓘ</span>
+    </summary>
+    <p>
+      determines the milliseconds needed per attempt calculation
+    </p>
   </details>
   <input class="" [(ngModel)]="msPerTry" type="text" />
   <details>
-    <summary>Pity System? <span class="short">ⓘ</span></summary>
+    <summary>
+      Pity System?
+      <span class="short">ⓘ</span>
+    </summary>
     <p>
       follows the markov chain, meaning the base possibility is added after each
       attempt for the next one (https://en.wikipedia.org/wiki/Markov_chain)
@@ -13,12 +21,18 @@
   </details>
   <input (click)="checkPity()" type="checkbox" />
   <details>
-    <summary>Probability as decimal number <span class="short">ⓘ</span></summary>
+    <summary>
+      Probability as decimal number
+      <span class="short">ⓘ</span>
+    </summary>
     <p>(%/100 e.g. 50/100 = 0.5)</p>
   </details>
   <input class="" [(ngModel)]="probability" type="number" />
   <details>
-    <summary>Attempts <span class="short">ⓘ</span></summary>
+    <summary>
+      Attempts
+      <span class="short">ⓘ</span>
+    </summary>
     <p>how many tries you want to do</p>
   </details>
   <input class="" [(ngModel)]="attempts" type="number" />

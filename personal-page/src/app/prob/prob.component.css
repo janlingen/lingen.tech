@@ -9,6 +9,9 @@
 .short {
   font-size: 1.3ch;
 }
+details p{
+  color: rgb(247, 136, 136);
+}
 
 input{
     color: black;
@@ -24,3 +27,7 @@ button {
     border: 2px solid rgb(133, 247, 137);
     border-radius: 8px;
   }
+
+.tooltip {
+  color: red;
+}

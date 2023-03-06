@@ -54,4 +54,8 @@ export class ProbComponent {
       await this.waitForMe(this.msPerTry);
     }
   }
+
+  onHover() {
+    return;
+  }
 }
