@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ProbComponent {
   pity = false;
+  success_cnt = false;
+  times_success = 0;
 
   probability: number = 0;
 
@@ -41,15 +43,20 @@ export class ProbComponent {
       let rand = Math.random();
       if (rand <= this.probability) {
         this.results.unshift(rand + ' SUCCESS');
-        // this.attemptsFirst = this.attemptsFirst + 1;
-        this.attempts = 1;
+        if (this.success_cnt == true) {
+          this.times_success = this.times_success + 1;
+        } else {
+          this.attempts = 1;
+        }
       } else {
         this.results.unshift(rand + ' FAILURE');
       }
       if (this.pity == true) {
         this.probability = this.probability + this.probSave;
       }
-      this.attemptsFirst = this.attemptsFirst + 1;
+      if (this.success_cnt == false) {
+        this.attemptsFirst = this.attemptsFirst + 1;
+      }
       this.attempts = this.attempts - 1;
       await this.waitForMe(this.msPerTry);
     }
