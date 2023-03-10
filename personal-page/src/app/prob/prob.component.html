@@ -4,9 +4,7 @@
       ms per attempt
       <span class="short">ⓘ</span>
     </summary>
-    <p>
-      determines the milliseconds needed per attempt calculation
-    </p>
+    <p>determines the milliseconds needed per attempt calculation</p>
   </details>
   <input class="" [(ngModel)]="msPerTry" type="text" />
   <details>
@@ -37,7 +35,9 @@
   </details>
   <input class="" [(ngModel)]="attempts" type="number" />
   <button (click)="calcProb()">Try!</button>
+  <input (click)="checkSuccessCnt()" type="checkbox" />
   <p>Attempts taken: {{ attemptsFirst }}</p>
+  <p>Success in given attemps: {{ times_success }}</p>
   <br />
   <div *ngFor="let x of results; let i = index">
     <p *ngIf="x.includes('SUCCESS')" style="color: rgb(133, 247, 137)">

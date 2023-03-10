@@ -33,6 +33,10 @@ export class ProbComponent {
     console.log(this.pity);
   }
 
+  checkSuccessCnt() {
+    this.success_cnt = !this.success_cnt;
+  }
+
   async calcProb() {
     this.probSave = this.probability;
     console.log(this.probSave);
