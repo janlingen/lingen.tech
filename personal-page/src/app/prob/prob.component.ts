@@ -49,6 +49,7 @@ export class ProbComponent {
         this.results.unshift(rand + ' SUCCESS');
         if (this.success_cnt == true) {
           this.times_success = this.times_success + 1;
+          this.probability = this.probSave;
         } else {
           this.attempts = 1;
         }
