@@ -20,6 +20,14 @@
   <input (click)="checkPity()" type="checkbox" />
   <details>
     <summary>
+      Attemps until success?
+      <span class="short">ⓘ</span>
+    </summary>
+    <p>===</p>
+  </details>
+  <input (click)="checkSuccessCnt()" type="checkbox" />
+  <details>
+    <summary>
       Probability as decimal number
       <span class="short">ⓘ</span>
     </summary>
@@ -35,9 +43,8 @@
   </details>
   <input class="" [(ngModel)]="attempts" type="number" />
   <button (click)="calcProb()">Try!</button>
-  <input (click)="checkSuccessCnt()" type="checkbox" />
-  <p>Attempts taken: {{ attemptsFirst }}</p>
-  <p>Success in given attemps: {{ times_success }}</p>
+  <p *ngIf="!success_cnt">Attempts taken: {{ attemptsFirst }}</p>
+  <p *ngIf="success_cnt">Success in given attemps: {{ times_success }}</p>
   <br />
   <div *ngFor="let x of results; let i = index">
     <p *ngIf="x.includes('SUCCESS')" style="color: rgb(133, 247, 137)">

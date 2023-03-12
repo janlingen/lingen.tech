@@ -30,7 +30,6 @@ export class ProbComponent {
 
   checkPity() {
     this.pity = !this.pity;
-    console.log(this.pity);
   }
 
   checkSuccessCnt() {
@@ -41,6 +40,7 @@ export class ProbComponent {
     this.probSave = this.probability;
     console.log(this.probSave);
     this.attemptsFirst = 0;
+    this.times_success = 0;
     this.results = [];
     while (this.attempts > 0) {
       console.log(this.probability);
