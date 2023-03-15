@@ -19,6 +19,7 @@ export class HelpComponent implements OnInit {
     'gui',
     'technologies',
     'ls',
+    'prob-sim',
     'secret'
   ];
 
@@ -35,6 +36,7 @@ export class HelpComponent implements OnInit {
     'graphical user interface',
     'more detailed than skills',
     'short list of all commands',
+    'use the probability simulation',
     'find out yourself',
   ];
 

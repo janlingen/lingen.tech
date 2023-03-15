@@ -46,6 +46,7 @@ export class CommandlineInterfaceComponent implements OnInit {
       'gui',
       'skills',
       'secret',
+      'prob-sim',
     ];
     if (this.currentCommand.length >= 1) {
       if (this.currentCommand.startsWith('cd ')) {
@@ -67,6 +68,12 @@ export class CommandlineInterfaceComponent implements OnInit {
       case 'secret':
         this.historyService.addCommandResult(command, ['navigating to secret']);
         this.router.navigate(['/secret']);
+        break;
+      case 'prob-sim':
+        this.historyService.addCommandResult(command, [
+          'navigating to prob-sim',
+        ]);
+        this.router.navigate(['/prob-sim']);
         break;
       case 'ls':
         this.historyService.addCommandResult(command, [
