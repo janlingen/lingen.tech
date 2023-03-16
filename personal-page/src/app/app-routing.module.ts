@@ -15,6 +15,7 @@ const appRoutes: Routes = [
   { path: 'cli', component: CommandlineInterfaceComponent, pathMatch: 'full' },
   { path: 'secret', component: SecretComponent, pathMatch: 'full' },
   { path: '', redirectTo: '/cli', pathMatch: 'full' },
+  { path: '**', redirectTo: '/cli' },
 ];
 
 @NgModule({
