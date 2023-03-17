@@ -22,7 +22,7 @@ export class CommandlineInterfaceComponent implements OnInit {
     if (['Enter', 'Return'].includes(event.key)) {
       this.completeCommand();
       this.checkCommand(this.currentCommand);
-      if (!['gui', 'secret'].includes(this.currentCommand.toLowerCase())) {
+      if (!['gui', 'secret','prob-sim'].includes(this.currentCommand.toLowerCase())) {
         setTimeout(() => {
           this.router.navigate([], { fragment: 'mainInput' });
         }, 1);
