@@ -1,4 +1,5 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-secret',
@@ -10,7 +11,7 @@ export class SecretComponent {
   wrong = false;
   input: string = '';
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   checkInput() {
     if (this.input == 'hcasgpelhgtls') {
@@ -20,5 +21,9 @@ export class SecretComponent {
       this.success = false;
       this.wrong = true;
     }
+  }
+
+  backwards() {
+    this.router.navigate(['/cli']);
   }
 }
