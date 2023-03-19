@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-prob',
@@ -21,6 +22,8 @@ export class ProbComponent {
   msPerTry: number = 350;
 
   results: string[] = [];
+
+  constructor(private router : Router) {}
 
   waitForMe(ms: number) {
     return new Promise((resolve) => {
@@ -69,5 +72,9 @@ export class ProbComponent {
 
   onHover() {
     return;
+  }
+
+  backwards() {
+    this.router.navigate(['/cli']);
   }
 }
