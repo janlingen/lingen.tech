@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HistoryService } from '../services/history.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-commandline-interface',
@@ -11,7 +12,12 @@ import { HistoryService } from '../services/history.service';
 export class CommandlineInterfaceComponent implements OnInit {
   currentCommand: string = '';
 
-  constructor(private historyService: HistoryService, private router: Router) {
+  constructor(
+    private historyService: HistoryService,
+    private router: Router,
+    private titleService: Title
+  ) {
+    this.titleService.setTitle('lingen.tech | CLI');
     this.checkCommand('banner');
     this.checkCommand('help');
   }
@@ -22,7 +28,11 @@ export class CommandlineInterfaceComponent implements OnInit {
     if (['Enter', 'Return'].includes(event.key)) {
       this.completeCommand();
       this.checkCommand(this.currentCommand);
-      if (!['gui', 'secret','prob-sim'].includes(this.currentCommand.toLowerCase())) {
+      if (
+        !['gui', 'secret', 'prob-sim'].includes(
+          this.currentCommand.toLowerCase()
+        )
+      ) {
         setTimeout(() => {
           this.router.navigate([], { fragment: 'mainInput' });
         }, 1);

@@ -1,4 +1,5 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-graphical-interface',
@@ -6,7 +7,9 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./graphical-interface.component.css'],
 })
 export class GraphicalInterfaceComponent implements OnInit {
-  constructor() {}
+  constructor(private titleService: Title) {
+    this.titleService.setTitle('lingen.tech | GUI');
+  }
 
   ngOnInit(): void {}
 }
