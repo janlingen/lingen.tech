@@ -99,9 +99,9 @@ export class CommandlineInterfaceComponent implements OnInit {
         this.historyService.addCommandResult(command, ['about-display']);
         break;
       case 'email':
-        window.open('mailto:info@lingen.tech');
+        window.open('mailto:jan.lingen@hhu.de');
         this.historyService.addCommandResult(command, [
-          'mailto:info@lingen.tech',
+          'mailto:jan.lingen@hhu.de',
         ]);
         break;
       case 'linkedin':
