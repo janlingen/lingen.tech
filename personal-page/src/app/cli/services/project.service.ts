@@ -49,6 +49,12 @@ export class ProjectService {
         'python-dotenv',
       ]
     ),
+    new Project(
+      'sbom-displayer',
+      'software bill of material gathering and management tool',
+      'https://github.com/janlingen/sbom-displayer',
+      ['java', 'git', 'spring', 'cycloneDx', 'neo4j']
+    ),
   ];
 
   constructor() {}

@@ -38,6 +38,7 @@ export class LibsService {
   new Lib('speech recognition', ['python']),
   new Lib('asyncio', ['python']),
   new Lib('threading', ['python']),
+  new Lib('cycloneDx', ['java'])
 ]
 
   constructor() { }
