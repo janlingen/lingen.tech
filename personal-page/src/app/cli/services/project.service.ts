@@ -55,6 +55,12 @@ export class ProjectService {
       'https://github.com/janlingen/sbom-displayer',
       ['java', 'git', 'spring', 'cycloneDx', 'neo4j']
     ),
+    new Project(
+      'springboot-actuator-dashboard',
+      'this tool tracks request/response metrics (timestamp, method, URI, status, time taken) and displays them in a table/graph, it also shows application health status (resource usage, errors)',
+      'https://github.com/janlingen/springboot-actuator-dashboard',
+      ['angular', 'typescript', 'git']
+    ),
   ];
 
   constructor() {}
